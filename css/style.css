@@ -1,0 +1,83 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, * ::before *, *::after{
+    box-sizing: inherit;
+}
+
+h1,p{
+    font-size: var(--fonziseParrafo);
+}
+:root{
+    --White:hsl(0, 0%, 100%);
+    --ight-gray: hsl(212, 45%, 89%);
+    --Grayishblue: hsl(220, 15%, 55%);
+    --Darkblue: hsl(218, 44%, 22%);
+    --fonziseParrafo:1.5rem;
+    --fuente-Pincipal:"Outfit";
+}
+body{
+    box-sizing: 16px;
+    font-family: var(--fuente-Pincipal);
+}
+body{
+    background-color: var(--ight-gray);
+}
+h1{
+    font-size: 2rem;
+}
+
+/*******version mobil*/
+@media (min-width: 375PX) {
+    .contenedor__principal{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 90rem;
+    }
+    .img-qr{
+        max-width: 95%;
+        border-radius: 2rem;
+    }
+    .principal__interno{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--White);
+        border-radius: 2rem;
+    }
+     .principal__text,.principal__parrafo{
+        text-align: center;
+    }
+    .principal__parrafo{
+        color: var(--Grayishblue);
+    }
+    .attribution { 
+        font-size: 11px;
+         text-align: center;
+         }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+    }
+
+    
+}
+@media (min-width: 1440px) {
+
+     .principal__interno{
+        width: 20%;
+        
+     }
+}
+
+
+
+
+
